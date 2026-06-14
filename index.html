@@ -3,8 +3,261 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaSpark Digital – Marketing Agency Portfolio</title>
+<title>TTC Digital – Marketing Agency Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTC Loading Screen</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0;padding:0;;">
+
+<!-- ══ TTC LOADING SCREEN ══ -->
+<div id="ttc-loader">
+  <div class="loader-bg"></div>
+  <div class="loader-content">
+    <div class="loader-logo-wrap">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABbCAYAAAC4XEFKAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAet0lEQVR42u19eZBd1Xnn7/vOfe91tyTEIgESAguEDUiAY8DIYJyWYcBUpTxTLuiejO1MvCS44nUyHlc8M8SvX8ZbKjPO4D0kdmJij406HscBTAZspGbfGrFIQrtlSa219379tnvO980f59ylRYOMLUAt+lZ19Vvuve/e8zvf/jvfpasuuuqkC9qveU8B8xDHNQAMvxn/z8X+H6ZuRTBaEECQOwbpscb5I5wAgECYAQgcHAri95LckeIANsnvOoABkfA9AyIOgPHvXfY7AgfAgWEgAJxxKDgTfluKE3bkNIBUoASozi/M30/EFg5ootmmBClwqRWuOtyzQ03GT2q51tyO0on7TNjfAHDCqNqxhe08Z8xw1MrfdTNuttWkumA+nbSXiSX/nYQbdeEOOdyquGQM/GhMGZPDXruCwEw5K095qSICMW0R2k8aigfnb28+8v3oUEvs2zsWfv4NxTcuqhUnASIADAIgKiBSqACqGs6kUBWQGqgqRP17KPyxCvhdFaqAQqGiAMifQxVKhPBlOGN4q/5WlMR/yv4LVUBZ4TECwBz2CedXBYOgpFAoiPyNKytOL57tz6kark9BSv41qf+d5DoIIFXAKGAALcDvq4AyAeRBoYjg34QDSUFioBQBRkEKkDIU4TdZw+4EgoIofA4Kw5acy3+Wfe8/YWUIKdQIGBR+mdLBUxIQMYo6F9YSBmo7xkCHvmMQjUWbNz88MfKW6/72rPZlN8NprKQFCoMGchAQRAnJNSQSo3BQYkAFYIEqZcBCoWEMVBRCClaCQAESgEx6fkUYQLC/RRVAxU+CcDak+7hw4wKFQMmDQww4zSazskCVAYgmA6cJmARAiEAKIqcgTT7Nj7H/RQWUFAI/qsmQEyV3GmAgAZGFckuJjJ+wpETkgmgxQBSOFwgJPNReY1ACJnvYXACY2U9ESeSHw+8DChIwSFiKYLQVmi7Grskt2/a2dn/jroFb/h7AGABEALDDbvinM+Nzbp4bzS/GaknJQVX9RfhR9xcN9QNFDJUgdkzQRCKQ7JfObS8VuQFWAQjOn5O8dPvRs34EHQPEQdjESwcYIPHn1HTu+oFJ32RaRkk9tn70A27JBKRgfcS/FgJx7oopkQwFsdc6nEw2VTAFRaKZ9AZAoWCvNFVTDUbsjUNuMLwqZoXCZTNHk4kYJJ3CfZCAiPzIhut0Ss6giALmFGpxC/sb2zcciH/1tTt3f/OHAMYBoBPlqA8VR2UoV0DymctvefSsOeetrNuaIxIjmlNfylDYdIBVARVKNHI2sKoQyYyEapBk8dBTuGmoZscpACEoid9HOTMFXoTCBHJhZDmoeYVCclJHkETPJ4OklJwlnRAqiYJzQWVmqlqzuZJTBxQ+l1TSMmWh/roVYDbJLAvXkJmEVN1SIq0eSCWCl3eBJspXs2sl48CkgEZwZEGsrihtFOlcrrbq2N/Y23+wset//WzfN38MoAUQOvG5qA8Vl1xmhM4eRh9kyB647QxZtpJUw1ziAIBAyaWzOrkHENKbQ+7CMnDDMFl/DJOfFJloA5xIfJA0D4gEwUu1q7eLiqBVAhAKEHEGMvwETyZQ8iOUSnDAMZxfgt1OJmKiAby0ILWxlEwyys6Xbf6aE/OliQkK18+JdoM/b7oPJ5h7/4WJg69DIGIwJX6O9x5YIAUqcUHnmInGJPY3tj6we3LT19cM3vZjAI5AuBG3m150Sx8qFlOu0Lsy8o7z37Wo88Qbtp5UOG2O1VY27VQgQZ35cRZA1AZdgkxgvcOFVMqDxZGcE6OJVOYHP8iH5jyunPPkZzVD1QXwKTfgBFWXk/gp4uVVPAisnPpnUxxFopyqzc/OxNamXkwyO7JJl07MRPOQ9yOCSk2cM+LsWNKpmpo4maiUTUfKwGclGCpFBZmL4dYIBlv77v5VbevX7h+87e7EGifA4gUilrut1V2rTXdvt/vUJf+z99y5F91Qc+MORBHIeYBAqVfIxCiiLXiNPnxRzUtBJiFIwFAN4CaT29te5cx99oAyWNg7cHk4kpnvY7JExj1woqnlp8MUrUyLnabOknefNKjzHALp9Av2JZVinSq9ud8jZahw+LHsGig4haSpi5YGHH6m0JRjKEgzAFhRDDcOtkbiQz/d2lz/tccHf/xAYhi60c296H1RYJMtAoBvHNxAAGjI7rttCZbd6D0nCVPMS4FAUKAChuqH6pPx8G2sJeclW9KAjYVhVUKo450J8lo+jQOT/b3LFAJB2BDsMqDkPXVK4jwLZkAC8KkIQEHipSaLFLPLQbh0f6xmYaNME0IKZTo+fzYhMCdaSqYcxLmJ5ieAAcSE8c7/CAHsAOHUJEwXxk6BhK1CCKPx4PiO1rp/XDf88+cBoAzljegmArlpUhN4UQlOLN3ChRfM/fDSj28+vf2sxU1XE/U+YPBARQtUwMHa/tZfrfv0MqA+gNntVdkSYHvR617usVEyBcudn4sqfZXq6JLh3kVY+imARVWYEzulICste2r74tKNb/rIX/T+h7/+468+dndhuN4+zY+uBbDqCD+d7LP2+EGi70g7HDYmnUc631oAkErqub38LdUZXegyveh1v3fRH156+dyrn5hD8zRGzMh5mqKiJSrSjvrmse9v//qy6sS+IU305ex2TG6pFehFr1Mo3fXc956aiIfXGS6yqkriICUToiUttyg6e/7bTr763QpFZ2fZHJtqrcxdWG3KKLNCqQurTfKecj7w8b5F+Tc9nT0GfbDj8djqxW24BEqJr5v6EqKCDp6DxYWzPwjgH9au6hHqqxxzN1ZBRXKvp6mXkL7uAEafd/9+1Xj+9tOLS3vmmHmlWBoKMvko0sSupQvaT3v7xedccSFVaH0ZZc4P6GstuRVU5I8uu7ncPrrwiqarlwS2VKDiuECh6gpgPWVn/fm77tn7/f9+LF37Kw5wBRXRsjJVaOfySy5dc1Lh5OutNpySi5LqgTLgxLoFpUXRMnlz17N4ZD06wcnkeI03qqAi1//s+tK8z578JyfKwtNappnlyRVQcjAUYbduuTe4evng6fi1wamaXtvDAOhAc+B7DWkQYLKMQchPCyyzGiwwZ/17AMWevh53eAr3NZHecpkA4MLbrj4vahYXVDFum9xwLdRdCw3XRN0JXHzIDejB1u6fAcCp2Hhcq+oXAFzp84nqB/fcd8+h+v7hApWM5uoCJARSYnEtd2q05LzO8997HYG0s7PztXe21vr7sXu4s03mGSKAwYaIDUCGiJg5KkzaifEtrSeeDc6lvK4ABqCru1abXWPPjVRl5CdFUwCTcUxJ2o0BMnDUxAlmrp7GS/4IAD526sdec0lY0bdCAcA0zDXkfIFjakxIQgAm3Fj/xMTEUDkkS19mWPlq/h1lJysJmXp7AQCjsvfvq/aNHy4gYgsLpNlXhbAySYxTigvfde65ly/p7u3e04Uu09XVha7erpcFds/RABe9tAFd+tGvl+fq30QrrcZQcobUpOQBJqOxxpiwo/d5ge95Cfs7bXg/49T59ACHmJg20CNnXrJ8w6K2s1fEcVWSYq2fXkxOW3ZJ8ey2N89Z+e+24bFvLge0u5deU5X36Qe/uKLYajvdwgnBcBIQhZIJj7sRDMUHHj6i/Z0uiroEBexCCQBwCMDC8P/ob3LlKR8yo7xdNx7qqx51gKfExK2hHyxqO+eLRFlMTEQQ51DgIh2cPICdozs2AKS9nQvn/OHgZ2/pwIlLAVX1vJnEN8vJRWBnJMl4cal8EJKigoYiPoHBEHU55oPXrJ4NktBZlFRUZX3bYrIEZUdKnqTnOVJQZuKqHR16ZmjdU9PZ33K5zJVKRT7ZVT6r9XTpTtQjo1HGw3CDri1ui+cQCHRmuKUzQyVKAzUn7M2grKIW5jxToi7yVSfKTShHRiPbzieUdrd2xvubG28E8DBQJvyGoVz0EnlVAYAt9Ud7FxQW/8UJhZONRawIjCSDyCnIPD322Ff6B+5a29V13cnn7Hr3P51kznynwKbWnRIg1IMF+FBFoaHERIARQD13Sx3lAA5DoFk5MA3XvJlI666+bKywtRgtbnoKlCYle/HkHGIz6cafBkbGEibLNE6azJtY+I5IFlxU5zqYs4qcN/C+YJ8j6AQtb6DKgcgRyqTJNaeMjuT+ASINmsWT8IR9rTuy7dg2sWFwf23TH++YePQhoMz4LeL06KUyQSEm3rbiolVrFkRnXBs752DEqKp0mBPMkyMPbV6z57b/ctP7/tOiE7ctu3t+44w312QsVnaeaSIKSakulLE8NF+cT6g3iVxzbjJIqI0mlJowgKpIyCGBPxnIAYAyEQcR8fVeSkU81iaqbuJhAFgbmCzTOWmtYblWWi2xUcOCJNIp2trPKM/kTD7RdOJljE5fZE2TojmWpJdmT4pQJhCJFrRorZjic+P3P37HxLduQB17fltwX1qCs5hYxt3QD2OJr2UhWHLawXNkd/2XtGb7ne/50ge/cvbkxjn/r71+0rk1HbPGoJCkeYkInKdSJAX+RG9zQuoiT7SThPkoSFiqJH5wFOTRIEpL8TlODzhMECUFK6foa8Ye4aodxag7dD8AnNr3AvtL3eh2ZS0XJy6kVYQmE1PkLyyl7WUY55zcxMaHGebTfYHOA1JP4iSvqkl9XTiZkE5FizpHm9YWnxt/+P/eM/jdDwCY6ERndDj95miFSYfHxFg//NidY/bQWERFU3BF21IbPTLw84999pMft/UN8x9rr518bkMnnWGOXuBvEk3xS9PXgZCWK2SkLAfKzXjhvIKUQKvNjLqS89ywjO46xecNZlsNMU+40bEtjUdezP4SAMTdC5ebZuEsh9hTTHLT6XBHOmVzEGW3SQ4UCIRKgORjtTDZE2KiQKRNO2ikOW76x/o+f8/gd28g0ARQ5j702aPhrfERvtfVXavN0/sfPDSqQ3dFBdJi1F5Yd/DRf7joqjPWDT9WeKLQaF/QoJojw0Y5I8R4Ic2T6qY9fTpAKc85JUlk5BvPggagJkhFYI3kqD1KioSyT3m/RQmRsBABVamuGx8fH542/l27igFADujV7TKHwOpSYvwLglJ1quIAOIU69bwlTxYXOBU4VXWqcBB1EL+PivrPAQfVuE3n8sDkQP3J0ftuWjv0gz/vwmrjp8XRy41HR9qhFz4m3m93fOccXPDegfGdW4qn1p5esu/yu9Eszos5bkZKRlWsKB1mX8nzdQKpXdWvMOCUv+aVnudVBYdDU8ZyuviBkpKzymHEupyiJs8wV89pzwh1/ku1sKi50YdezP6ib5X3xGp8TRwrUHiBMgiOfYQilQwRBY9foRw4V8JpZECJ45dbSUFpjKkQiNk2+fzAk9X7b9w28dCjnShHvei2OMrbkQHuDTHxRnpg8Ypz93Wc0nbaBc3O/21aJbhCEwVtK/m7dyGsSeinyAIizXFtc+KgiadJmaQmg6ApedzzohKONICQGs9WNgACpw6qNrcSRdOJQsQ8Hg9hON6/Znr7q1QByZe//eX5Q1/Vy2Nt+HjtME1ExGjaGvbY7U8WqK0aXHgVFXivL8rl7CnlbjOyLC4TwRDb4dah7Q9O/OsXRhrbdweS+lEH99cC2GeaeghAvMs8/f5l9Dvv2Da4qYGo2WiRPUUEgHhqbZIWYmGAJSci7AlwyWvOXjMYEaKcsQjBBwskkPU4RCKSHiWQ8JtQcNPV9A2nvPGaObX5VzS1LjDEqXlQpxEiHo9HxzY3Hl83nf1d3dXL3b1wzV+cdIlpmAUtbgmH9Q653IMWUKKBeGDX7Xu/svJoVaBCufIVAffXBjipl97x7I/uA35037GYkvvs4m+fj6pHX1Uz14ZIwDATMv5MYn8Pj383eFYpmgfsv2HXBuWGCIjzzhXBOIVGEzL+CIHl23i8sBeXviwSXD4luwo93IeKvNK16Ojl7NyFLrO8c/kxQ3XZV11Mi/r36sHPNuc1f9p8JzkDkBgGZ0ZTWWNyqEv1/hfLP/f09biKVsheqtdRHINKmicvp8q1IXVU7cg9CqH/gzu0D5e9LHAO4728KindlwVwL3rdkZmDr97W1bXa3Nr/EfeJpz9/Xsm2n2LJKuUyCqpARKBxN4ah5oEHpss/l8tlpgrJl3tuXTJUiy8SxN7YIlv1oFA1xGakebC5zW26F4D2zRCSQIQZvC0PqrWt1rGy4Epw1HAgjXJxqjIZM2FHx7ba9U9OW/8N6cnqY7KqGHeUGqbmADL5ZTWkJIaMqero+r0jG/b4Fc40IwDmmQzwxpBaxGTpSjgGWNM1SD4yIVEyqNn6s+Pje6aNf9P05FDzWrUENaSHJ2BAUIcYNTe6FoCuQo+ZKWM0kwGmXnS7T2z5RCmuxytjtKAsJkkYSZA9C4uaTjyQs78vSE/+jd5U0BpfFbsWsjyn5pKhxFU3iqHWgV8cscw4C/DR2ZLUYvHm099o4rYzHdl0RaQqQZ1fBD/pRjHU2vNgoo+nO8fuD6+4kFrR2YKWsvogLl1Qp6KGIp6IR4e3yuOPTKvmZwF+BbbAv3J7Sm9rk3YGqYP4Bd6hp4gyGR6zw9Vf1jc9BQB96JvO/hLtKnQW4nZSVvcC30khBEZVx58cGxsb/Q1oPrMA/0Zb8OajZvFKtpwly+Cr+0QkxIS6G3/m4OQvDwRgZKoN36ggaGtcr3GxAwwoXTGZpkBZm9rAaDx074uo+VmAX4mtgh7XpV3GNrHSigWRMgX6BkFBDLWwqGr1wRezv73odX/27S/Pt+O6MtYYSl49S9opQEDEZtQO6oHW3vt8gmJmcahnJMDlcpkB0jPet/wNqONNDq1AyU/CGgUrU81NYrQ1eP90jtHqrtUMAG13dby11OpY6OCcCpE4BjkDEoYKCyOiSTu2c9PYA88RCBVUdBbgV8n+yt62t5S0PVLjnCQFClUIQ0FsxuPh+t7JbU9P5xgl6cnGCF+LOFKNkPVZIJ/nJpAIWUzI2FoA8Y243WCGMStndByMCb7KuCKESBM6UGBzCZNB3VU37K5v3jfdEtdKX4+DAXTcXBO7FjErJfQgpcSOgxq2hjE7eA8AHMQ3ZtyKxBkJcE9fjwMD2uQrVdQvtwh1QlLf28ypQ81VH5wuMZGo+FtuvnWJTMpyq00AylnHIIYK1LAxY3aoubO67WHv162acasgZlyqMqzvlf/85+UF8sPSBTGaUN8hJqUBsRqqyyRG7GDftImJkJ7c91i9M7Lz2q2pOt8eLVvsTkwCGDNpq+tvWtm1d3H13YV+3IpFc8u/kVCsBdDXl/WvmgX4xdKTXSsIvUD1Plxygo3mCUtotaJJNx8lNmbcjtR31TYk+edp05M0El3rWoAWoJr2u9LA4zPqNMZQvO9fKn1ftS+oBf1mybdX3YTPOICTAkN7o+3KyJXQoqYk/Ys8wFACU82NbRqobxuYpjCQsCfbRlfE15CY0AMpMEBSnquwqGDZwhVvX3HGJV8WNQyFeKKBgyG28wonD6mSTUTaiviOOibrKkuiqkq0PV5fu2PTt76jqgl5R2cBnk6C+1YoCJC6uVQE0Mh5jrumfaZE1HEjrj4U7G8E36cJANDVtZp7e7td/N72i7leWGKpqZw1uPIEW990laHAKfUzruNadF1KQUqaswW6rl9xyYHwF6g6AIpe18OTtA2W6sX4vWUfegttp493anlKu8FZgKckJ7pd+WvluaO3FN7qxCIlIifN0QBqagMTXJ3W/iYaoLEr+t1C3A4XVR1AUb4FYkIQJFI0tSYKCEnodKtZq8OkbxchFz1lHRiR9VZTRK4kZ9Uv+ti1575//71bK59/JXlYM9aLTooDg3fhfIoLpwnZsLIlLExXUYUxY3bQDritgX+1XA9LcQoYMBOld4lzuS5oeTuZe0fCTBLBUASmSIkiIo2YJSJC+HMRkfrXLBGzRDASkdF0Hxs1iiUtxUvrb/4f17/pfR/tQ8VeeulNhVmAp0lw8FjxikhKEBaXsZbFFxjAqLv65m2H+ncezjFWKFVQkb/90eqTXQOXtaQRwqMs/tWkI27S8iFpeI78WbLlc1nzUkXaeDzJlyQtGgMDP44mow7psItr533j2vNv/P3+/lvjVxrkGQVw4v3qKF9JNjT5VE47+DIgSoqa1p4A4A6Pf3u7ehkADt0+cplpFucJazPoWauqFkIWCqtQC3Duz1hVWBVYgCyULTTsq2oBsqpqBclr8vtDnMI6hThAHSmJ5RrmuhPi08cv+O5Vy6+7vr//1riM8iuGw0yywWlx/pnz+K1WbWjMK1l3WBDF2sKkjtyXRZ+59GSvt79DAxN/UGwtMgUWwxpBNbGhFHqEB7J6Pi6eusAqL9B+9SMhdMBP9uXQLzsv0UiJ8gtlacFO6N3XvPHEaytbK794pbr9zBiAyyhTBRVd133qOYVmaalQDIIwhMPiNEGkhkfjQzIQDzyRZZ4ylmAFFQcC9kzsvTNyE/0tNJTEkTqiukyeBmgkyLV+0EzJce5/U5uniNo2BqshQxEXwSgE7zrsKQRHcYfV5vx0tUM4rQEAZhdpe6HZcjcC+MWsBIdWTe375rzVuLmmSTVLiig8CQIqEDaGa7a6ectQ39YXIcYpFLh9w1duP9Zu75WqUs0cgIMgNqv8tjlC0EjgnwmiySpCESg3pPlosL9T4t/81tXVZZb3Lqe8Al+Fl26Lmnx/pP18aLZCD2IDnYoVuhwv3a+kkjAUXu8SXEGPg6mAG2allRhMSrlFTgAIVmI0ZPyRI52rt/eFbXn7fr35dSzRwo8fL9p7maSf/MB/PU2buMBRDFXvPidLU5nYTNhh2dPc+XiQuOO6/9VxBfDGrhUEANGe+b8T2dIcgRMkzR18DlmYIqppbefGsb4NM5F58boGOEkv1va7zsiVEtpUuv6XlYQUqLqxfsxQ5sXrO9ER0ovUoJXiBGANDjKlXWwsLGoy9jAAHMQGmoV25gBMFVTkQ7d+Zh5ivsgiBiiwL9LeW2TGZQwjOvig92I3zkrvTAE4KTB0rO64wLTaFgq79HmOyeMUmQxV4/G964ae2QTQcd9g9PiS4FBgoKG2lUXpACg8CUtSGyxQRkPq/cChates/Z1ZACcrCG2d3iGiUBbKHk2bxL8WE3akb9b+zjyAqRfd7qYnbypQzVwq0kJacQ+lPFYyk3YUw3bvrP2daQCX4e3v/C8uWwpLb3CwgCprVmcVMFEV4/uenVj7HIBZ+zujJLjTX1+8111esu1GSRzlL5lUiYFJN/kMgNpMW/k3C3BSYBiRt6tjpE9tTMyvkjpRNLW+1vtjPTwL6QwCuIIe/wx4G73NqgAm62yqULAy12wVI3b48Vn7O8MATgoMH/j9P1lia7hAKIaQZQ28p9BghWu2OvLLsQf7Z+3vTJPgYH9P3HvGxW2uo03hHIkhX0RSQElII9Rl4tlhDI8HXpOG5EjoND67HbsAB/s7cUiuZBtBSFXSEJhAMCoCNLW5xttf32OnE+WoUqkkbdpf9zb5WC74CwigFi4XtkBYweDtr38E9CTGMOgOPgSALj532NA2sgDsB97zmUt27Npy+iT23Nvf36+vZ8+ajuHr0vf/1fvnlL563rZSc+7prtBS0mQBiWoBRRp0B8aemrz33C3V/kEAWPODJxf867ee/Pyzw8+cvt8NfPSpzT/d92quA5pV0b+ugxUKDPPuOHt5wbWf5hBn/BzPLxeDCI1W84kt1f7Bv/vnv5v3pau/9+kff+6xnc9ueP7suzd+q2vd5n/Z+3oH99hV0WH9bmuULuuI26jFNQulKPdsBIUy2ueb5z53xdf/YMefcU91tHHOU+MP/+PD9R/8x9AM/Lh+6OSMBnhtcLC4VbxSlbLG35SGwVELDSyad8aHJ5+OThirD2J965EvPFr/yc1lKFc823w2ZDpWVXQfKq5zTWdkJ7HSIQbIPwUgyUEDBIemNvbTCQOtATyla/7bo5M/ubkLq00l/6CF2e3YAziJZ1d86YqlHPNS0Rh02HMmFaIF7cAwHcB6+/Cnnhq9+0vhmQcyC+4xDvDakOBo7KfL2nVeQVmd5h9loyqRtuGA3acbGk+8d/3oL76aW2s7C+6xDvCqYH+p0XYliQEMZU/lUZUiSry/NeCebTx0w3PjP//hpbip8GospJ4F+GgnOBrFi506AOIfXSjqIiryvnhPbUP9sRu2VB/850txU6Eft8azMM4QLzpZMPanH/rTkyd+hjc7+BYNpOoMSmZ3Y+ehTfWH3rOl0f+Qf/TbLLgzCuBudDMAN/R4x4UdrnSiYysEFkYU7Wxu3vvc5P3X7Y6f3+DB7ZtVyzNNRSdPdIni4mVGIxhFy2gh+mVj0+bHa/eumgV3hgOcPoOhrr9LSk4patvReP65J8buvnqwtWNrF7rMLLgzdyMAOPeW60sfXvyFHR9d8DW9ev4H+wCcBPhnNs0O0QzeEgA/deVfnveR0/9a3zn3Q3cDmOsLBrPgzngVfTDY318d3PnO7Y1n7llT/e6/JVBV8TkGet0sVMeJir7wDVecj+UohlLfLEvyt9z+PwcJgOJaDI+RAAAAAElFTkSuQmCC" class="loader-logo" alt="TTC">
+      <div class="loader-ring ring1"></div>
+      <div class="loader-ring ring2"></div>
+      <div class="loader-ring ring3"></div>
+    </div>
+    <div class="loader-brand">
+      <span class="lb-t">T</span><span class="lb-t">T</span><span class="lb-c">C</span>
+    </div>
+    <div class="loader-tagline">Digital Marketing Agency</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loader-percent">0%</div>
+  </div>
+  <div class="loader-particles" id="loader-particles"></div>
+</div>
+
+<style>
+/* ══ LOADER STYLES ══ */
+#ttc-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faf5ff;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+#ttc-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(124,58,237,0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 20% 80%, rgba(91,33,182,0.07) 0%, transparent 60%);
+}
+
+/* Grid lines */
+.loader-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(124,58,237,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,58,237,0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.loader-content {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 0;
+}
+
+/* Logo + rings */
+.loader-logo-wrap {
+  position: relative;
+  width: 140px; height: 140px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 28px;
+}
+.loader-logo {
+  width: 90px; height: auto;
+  position: relative; z-index: 3;
+  animation: logoFloat 3s ease-in-out infinite, logoPop 0.6s cubic-bezier(.22,.68,0,1.4) both;
+  filter: drop-shadow(0 0 18px rgba(124,58,237,0.7));
+}
+
+/* Spinning rings */
+.loader-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+}
+.ring1 {
+  width: 120px; height: 120px;
+  border-top-color: rgba(124,58,237,0.8);
+  border-right-color: rgba(124,58,237,0.3);
+  animation: spin 1.2s linear infinite;
+}
+.ring2 {
+  width: 145px; height: 145px;
+  border-bottom-color: rgba(168,85,247,0.6);
+  border-left-color: rgba(168,85,247,0.2);
+  animation: spin 1.8s linear infinite reverse;
+}
+.ring3 {
+  width: 170px; height: 170px;
+  border-top-color: rgba(91,33,182,0.4);
+  border-right-color: rgba(91,33,182,0.1);
+  animation: spin 2.6s linear infinite;
+}
+
+/* Brand name */
+.loader-brand {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-size: 56px;
+  letter-spacing: 12px;
+  color: #1a0a2e;
+  display: flex; gap: 4px;
+  margin-bottom: 8px;
+}
+.lb-t, .lb-c {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: letterIn 0.5s cubic-bezier(.22,.68,0,1.4) forwards;
+}
+.lb-t:nth-child(1) { animation-delay: 0.3s; }
+.lb-t:nth-child(2) { animation-delay: 0.45s; }
+.lb-c              { animation-delay: 0.6s; color: #a855f7; }
+
+/* Tagline */
+.loader-tagline {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(168,85,247,0.7);
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.9s ease forwards;
+}
+
+/* Progress bar */
+.loader-bar-wrap {
+  width: 200px;
+  height: 2px;
+  background: rgba(124,58,237,0.12);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.loader-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #7c3aed, #a855f7, #c084fc);
+  border-radius: 99px;
+  transition: width 0.05s linear;
+  box-shadow: 0 0 10px rgba(168,85,247,0.6);
+}
+
+/* Percent counter */
+.loader-percent {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgba(26,10,46,0.4);
+  font-family: monospace;
+}
+
+/* Floating particles */
+.loader-particles {
+  position: absolute; inset: 0;
+  overflow: hidden; pointer-events: none; z-index: 1;
+}
+.particle {
+  position: absolute;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: rgba(168,85,247,0.6);
+  animation: particleFloat var(--dur, 4s) var(--delay, 0s) ease-in-out infinite;
+}
+
+/* ── Keyframes ── */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes logoFloat {
+  0%,100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-8px) scale(1.03); }
+}
+@keyframes logoPop {
+  from { opacity:0; transform: scale(0.5); }
+  to   { opacity:1; transform: scale(1); }
+}
+@keyframes letterIn {
+  to { opacity:1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(10px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+@keyframes particleFloat {
+  0%   { transform: translateY(100vh) translateX(0) scale(0); opacity:0; }
+  10%  { opacity:1; }
+  90%  { opacity:0.6; }
+  100% { transform: translateY(-20px) translateX(var(--dx, 30px)) scale(1); opacity:0; }
+}
+</style>
+
+<script>
+(function() {
+  // Generate floating particles
+  const container = document.getElementById('loader-particles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.setProperty('--dur', (3 + Math.random() * 4) + 's');
+    p.style.setProperty('--delay', (Math.random() * 3) + 's');
+    p.style.setProperty('--dx', (Math.random() * 60 - 30) + 'px');
+    p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+    p.style.opacity = Math.random() * 0.6 + 0.2;
+    container.appendChild(p);
+  }
+
+  // Progress bar animation
+  const bar = document.querySelector('.loader-bar');
+  const pct = document.querySelector('.loader-percent');
+  let progress = 0;
+
+  const interval = setInterval(() => {
+    // Fast at start, slow in middle, fast at end
+    const speed = progress < 30 ? 2.5 : progress < 80 ? 0.8 : 2;
+    progress = Math.min(progress + speed, 100);
+    bar.style.width = progress + '%';
+    pct.textContent = Math.floor(progress) + '%';
+
+    if (progress >= 100) {
+      clearInterval(interval);
+      setTimeout(() => {
+        document.getElementById('ttc-loader').classList.add('hide');
+        setTimeout(() => {
+          document.getElementById('ttc-loader').remove();
+        }, 700);
+      }, 400);
+    }
+  }, 30);
+})();
+</script>
+
+</body>
+</html>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -37,7 +290,7 @@
     position: fixed; top: 0; left: 0;
     pointer-events: none; z-index: 9999;
     transform: translate(-50%,-50%);
-    transition: transform 0.1s, width 0.2s, height 0.2s, background 0.2s;
+    transition: transform 0.1s, width 0.2s, height 0.2s,;
     mix-blend-mode: difference;
   }
   #cursor.big { width: 48px; height: 48px; background: var(--accent2); }
@@ -52,6 +305,32 @@
     padding: 24px 48px;
     background: linear-gradient(to bottom, rgba(255,255,255,0.97), transparent);
   }
+  .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-svg {
+  width: 44px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 3px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.logo-text span {
+  color: var(--accent);
+}
+
   .logo {
     font-family: var(--font-display);
     font-size: 22px;
@@ -159,6 +438,14 @@
     display: inline-block;
   }
   .btn-primary:hover { background: #6d28d9; transform: translateY(-2px); }
+  .btn-with-icon {
+    display: inline-block;
+    margin-top: 32px;
+  }
+  .btn-with-icon svg {
+    margin-left: 8px;
+    vertical-align: middle;
+  }
   .btn-ghost {
     color: var(--white); font-size: 14px; letter-spacing: 0.5px;
     text-decoration: none; display: flex; align-items: center; gap: 8px;
@@ -190,31 +477,229 @@
   }
   .marquee-track span.dot { color: #e9d5ff; }
 
-  /* STATS */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid rgba(124,58,237,0.15);
-    border-bottom: 1px solid rgba(124,58,237,0.15);
-  }
-  .stat-item {
-    padding: 48px 48px;
-    border-right: 1px solid rgba(124,58,237,0.15);
-  }
-  .stat-item:last-child { border-right: none; }
-  .stat-num {
-    font-family: var(--font-display);
-    font-size: 64px;
-    color: var(--white);
-    line-height: 1;
-  }
-  .stat-num span { color: var(--accent); }
-  .stat-label {
-    font-size: 13px;
-    color: var(--muted);
-    margin-top: 8px;
-    letter-spacing: 0.5px;
-  }
+    .why-box{
+        position: relative;
+        padding:40px;
+        border: 1px solid #ddd6fe;
+        overflow: hidden;
+        cursor : pointer;
+    }
+    .hover-layer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #6366f1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    }
+
+    .content {
+  position: relative;
+  z-index: 2; /* Ensures text is always visible above the background */
+  transition: color 0.4s ease;
+}
+
+/* Hover Effects */
+.why-box:hover .hover-layer {
+  opacity: 1;
+}
+
+.why-box:hover .content {
+  color: white; /* Changes text color to white when background turns purple */
+}
+
+/* STORY SECTION */
+/* ══ STORY SECTION ══ */
+.story {
+  padding: 120px 48px;
+  position: relative;
+  overflow: hidden;
+  background: var(--black);
+}
+
+/* Radial glow top-right */
+.story::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -80px;
+  width: 520px; height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(124,58,237,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Left border accent line */
+.story::after {
+  content: '';
+  position: absolute;
+  top: 120px; left: 48px;
+  width: 1px; height: 60px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+
+/* Big ghost word in background */
+.story-bg-word {
+  position: absolute;
+  bottom: -20px; right: -10px;
+  font-family: var(--font-display);
+  font-size: clamp(100px, 16vw, 220px);
+  color: rgba(124,58,237,0.04);
+  letter-spacing: -4px;
+  user-select: none;
+  pointer-events: none;
+  line-height: 1;
+  z-index: 0;
+}
+
+/* Two-column layout */
+.story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 100px;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT col */
+.story-left {
+  position: sticky;
+  top: 120px;
+}
+
+.story-left .section-label {
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.story-left .section-title {
+  margin-bottom: 48px;
+  font-family: 'Georgia', 'Garamond', serif;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+/* Stats strip */
+.story-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 1px solid rgba(124,58,237,0.2);
+  padding-left: 24px;
+  margin-top: 8px;
+}
+
+.story-stat {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(124,58,237,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.story-stat:last-child {
+  border-bottom: none;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: -1px;
+}
+
+.stat-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* RIGHT col */
+.story-right {
+  padding-top: 8px;
+}
+
+.story-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.story-bubble {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(168, 85, 247, 0.08));
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.story-bubble::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.story-bubble:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(168, 85, 247, 0.12));
+}
+
+.story-bubble:hover::before {
+  opacity: 1;
+}
+
+.story-right p {
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--muted);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.story-right strong {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Accent divider line */
+.story-accent-line {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), var(--accent2));
+  margin-top: 36px;
+  border-radius: 2px;
+}
+
+/* ── Reveal animation ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
   /* SERVICES */
   .section { padding: 120px 48px; }
@@ -575,7 +1060,7 @@
   /* ══ VIDEO SHOWCASE — NEON DARK PURPLE STYLE ══ */
   .video-section {
     padding: 100px 0 110px;
-    background: linear-gradient(160deg, #0f0720 0%, #1a0a2e 50%, #0f0720 100%);
+    background: linear-gradient(160deg, #0b070f 0%, #1a0a2e 50%, #120e1b 100%);
     overflow: hidden;
     position: relative;
   }
@@ -586,7 +1071,7 @@
     top: 30%; left: 50%;
     transform: translate(-50%, -50%);
     width: 800px; height: 400px;
-    background: radial-gradient(ellipse, rgba(124,58,237,0.18) 0%, transparent 70%);
+   
     pointer-events: none;
   }
 
@@ -607,7 +1092,7 @@
     width: 100%;
     padding: 16px 0;
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(139, 48, 48) 7%, black 93%, transparent 100%);
   }
 
   /* Scrolling belt */
@@ -626,10 +1111,10 @@
   .vcard {
     width: 300px;
     flex-shrink: 0;
-    background: rgba(255,255,255,0.04);
+    background: rgba(116, 32, 226, 0.04);
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(124,58,237,0.25);
+    border: 1px solid rgba(68, 57, 10, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: transform 0.4s cubic-bezier(.22,.68,0,1.2),
@@ -665,7 +1150,7 @@
     position: relative;
     height: 170px;
     overflow: hidden;
-    background: #0f0720;
+    background: #1e1b4b;
   }
 
   /* Real local video element */
@@ -997,8 +1482,8 @@
       padding: 36px 20px;
       text-align: center;
     }
-    .social-links { justify-content: center; }
-  }
+    .social-links { justify-content: center;
+    color: black; }}
 
   /* ── Small phones (max 400px) ── */
   @media (max-width: 400px) {
@@ -1011,6 +1496,7 @@
     .cta-section h2 { font-size: 42px; }
   }
 
+
 </style>
 </head>
 <body>
@@ -1019,10 +1505,10 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="logo">Nova<span>Spark</span></a>
+  <img src="Img/TTC_logo.PNG"class="logo-svg" alt="TTC Logo" style="width:44px; height: auto; object-fit:contain;">
   <ul>
     <li><a href="#services">Services</a></li>
-    <li><a href="#work">Work</a></li>
+    <li><a href="#videos">Work</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
   </ul>
@@ -1046,7 +1532,9 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
-  <div class="hero-counter">07</div>
+  <div class="hero-counter">
+    <span class="counter-num">TTC</span><span class="counter-suffix"></span>
+  </div>
 
   <div class="hero-tag">Digital Marketing Agency</div>
   <h1>
@@ -1058,7 +1546,7 @@
     From strategy to execution — we grow your brand with performance marketing, bold creative, and data-backed results.
   </p>
   <div class="hero-actions">
-    <a href="#work" class="btn-primary">See Our Work</a>
+    <a href="#videos" class="btn-primary">See Our Work</a>
     <a href="#services" class="btn-ghost">
       Explore Services
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1068,9 +1556,11 @@
   </div>
 </section>
 
+
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
+    <span>TTC-Digital Media Agency</span><span class="dot">✦</span>
     <span>Social Media Marketing</span><span class="dot">✦</span>
     <span>SEO & Content</span><span class="dot">✦</span>
     <span>Paid Ads</span><span class="dot">✦</span>
@@ -1079,34 +1569,7 @@
     <span>Web Design</span><span class="dot">✦</span>
     <span>Analytics</span><span class="dot">✦</span>
     <span>Video Production</span><span class="dot">✦</span>
-    <span>Social Media Marketing</span><span class="dot">✦</span>
-    <span>SEO & Content</span><span class="dot">✦</span>
-    <span>Paid Ads</span><span class="dot">✦</span>
-    <span>Brand Strategy</span><span class="dot">✦</span>
-    <span>Email Marketing</span><span class="dot">✦</span>
-    <span>Web Design</span><span class="dot">✦</span>
-    <span>Analytics</span><span class="dot">✦</span>
-    <span>Video Production</span><span class="dot">✦</span>
-  </div>
-</div>
-
-<!-- STATS -->
-<div class="stats">
-  <div class="stat-item">
-    <div class="stat-num">250<span>+</span></div>
-    <div class="stat-label">Clients Served</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-num">12<span>M</span></div>
-    <div class="stat-label">Ad Spend Managed</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-num">4.8<span>×</span></div>
-    <div class="stat-label">Avg. ROAS Achieved</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-num">7<span>+</span></div>
-    <div class="stat-label">Years of Excellence</div>
+   
   </div>
 </div>
 
@@ -1115,7 +1578,7 @@
   <div class="section-header">
     <div>
       <p class="section-label">What We Do</p>
-      <h2 class="section-title">OUR<br>SERVICES</h2>
+      <h2 class="section-title">OUR<br>CRAFTS</h2>
     </div>
     <p class="section-desc">Every service we offer is designed to drive measurable growth — not vanity metrics.</p>
   </div>
@@ -1127,7 +1590,7 @@
       <div class="sc-inner">
         <div class="sc-front">
           <div class="sc-num">01</div>
-          <div class="sc-front-icon">🔍</div>
+          <div class="sc-front-icon"></div>
           <div class="sc-title">SEARCH ENGINE<br>OPTIMIZATION</div>
           <div class="sc-peek">Rank higher. Get found faster.</div>
           <div class="sc-hint">↻</div>
@@ -1154,7 +1617,7 @@
       <div class="sc-inner">
         <div class="sc-front" style="background:linear-gradient(145deg,#6d28d9,#4c1d95);">
           <div class="sc-num">02</div>
-          <div class="sc-front-icon">📱</div>
+          <div class="sc-front-icon"></div>
           <div class="sc-title">SOCIAL MEDIA<br>MARKETING</div>
           <div class="sc-peek">5 powerful growth channels.</div>
           <div class="sc-hint">↻</div>
@@ -1181,7 +1644,7 @@
       <div class="sc-inner">
         <div class="sc-front" style="background:linear-gradient(145deg,#8b5cf6,#7c3aed);">
           <div class="sc-num">03</div>
-          <div class="sc-front-icon">🎨</div>
+          <div class="sc-front-icon"></div>
           <div class="sc-title">VIDEO &<br>CREATIVE DESIGN</div>
           <div class="sc-peek">Visuals that stop the scroll.</div>
           <div class="sc-hint">↻</div>
@@ -1208,7 +1671,7 @@
       <div class="sc-inner">
         <div class="sc-front" style="background:linear-gradient(145deg,#5b21b6,#4c1d95);">
           <div class="sc-num">04</div>
-          <div class="sc-front-icon">🎯</div>
+          <div class="sc-front-icon"></div>
           <div class="sc-title">PAID<br>ADVERTISING</div>
           <div class="sc-peek">Maximum ROI, every rupee.</div>
           <div class="sc-hint">↻</div>
@@ -1235,7 +1698,7 @@
       <div class="sc-inner">
         <div class="sc-front" style="background:linear-gradient(145deg,#7c3aed,#6d28d9);">
           <div class="sc-num">05</div>
-          <div class="sc-front-icon">🌐</div>
+          <div class="sc-front-icon"></div>
           <div class="sc-title">WEBSITE<br>DESIGN</div>
           <div class="sc-peek">Fast, modern & conversion-ready.</div>
           <div class="sc-hint">↻</div>
@@ -1262,7 +1725,7 @@
       <div class="sc-inner">
         <div class="sc-front" style="background:linear-gradient(145deg,#4c1d95,#3b0764);">
           <div class="sc-num">06</div>
-          <div class="sc-front-icon">📊</div>
+          <div class="sc-front-icon"></div>
           <div class="sc-title">ANALYTICS &<br>REPORTING</div>
           <div class="sc-peek">Data that drives real decisions.</div>
           <div class="sc-hint">↻</div>
@@ -1507,56 +1970,6 @@
 
 </section>
 
-<!-- WORK -->
-<section class="section" id="work" style="padding-top: 0;">
-  <div class="section-header">
-    <div>
-      <p class="section-label">Case Studies</p>
-      <h2 class="section-title">SELECTED<br>WORK</h2>
-    </div>
-    <p class="section-desc">Real results from real campaigns across industries and budgets.</p>
-  </div>
-
-  <div class="work-grid">
-    <div class="work-item">
-      <div class="work-bg w1"></div>
-      <div class="work-overlay">
-        <div class="work-cat">E-Commerce · Paid Ads</div>
-        <div class="work-title">FreshCart Relaunch</div>
-        <div class="work-desc">312% ROAS in 60 days through Meta & Google campaigns</div>
-      </div>
-      <div class="work-arrow">→</div>
-    </div>
-    <div class="work-item">
-      <div class="work-bg w2"></div>
-      <div class="work-overlay">
-        <div class="work-cat">SaaS · SEO + Content</div>
-        <div class="work-title">CloudDesk Growth</div>
-        <div class="work-desc">0 to 85K monthly organic visitors in 8 months</div>
-      </div>
-      <div class="work-arrow">→</div>
-    </div>
-    <div class="work-item">
-      <div class="work-bg w3"></div>
-      <div class="work-overlay">
-        <div class="work-cat">Fashion · Social Media</div>
-        <div class="work-title">Zova Brand Launch</div>
-        <div class="work-desc">200K Instagram followers gained in the first quarter</div>
-      </div>
-      <div class="work-arrow">→</div>
-    </div>
-    <div class="work-item">
-      <div class="work-bg w4"></div>
-      <div class="work-overlay">
-        <div class="work-cat">Real Estate · Full Funnel</div>
-        <div class="work-title">UrbanNest Digital</div>
-        <div class="work-desc">₹4.2Cr in leads generated via omnichannel strategy</div>
-      </div>
-      <div class="work-arrow">→</div>
-    </div>
-  </div>
-</section>
-
 <!-- PROCESS -->
 <section class="section" id="process">
   <div class="section-header">
@@ -1570,17 +1983,17 @@
   <div class="process-steps">
     <div class="process-step">
       <div class="step-num">01</div>
-      <h4>DISCOVER</h4>
+      <h4>TOP</h4>
       <p>We deep-dive into your brand, audience, and competitors to find your unfair advantage.</p>
     </div>
     <div class="process-step">
       <div class="step-num">02</div>
-      <h4>STRATEGISE</h4>
+      <h4>THEN</h4>
       <p>A custom growth plan with clear KPIs, channel mix, and creative direction.</p>
     </div>
     <div class="process-step">
       <div class="step-num">03</div>
-      <h4>EXECUTE</h4>
+      <h4>CRAFT</h4>
       <p>We launch, test, and iterate fast — cutting what doesn't work, scaling what does.</p>
     </div>
     <div class="process-step">
@@ -1644,8 +2057,8 @@
   </h2>
   <p>Let's build something extraordinary together. No fluff, just results.</p>
   <div class="cta-actions">
-    <a href="mailto:hello@novaspark.digital" class="btn-primary">Get a Free Audit</a>
-    <a href="tel:+911234567890" class="btn-ghost">
+    <a href="mailto: thinktankcrew2025@gamil.com " class="btn-primary">Get a Free Audit</a>
+    <a href="https://wa.me/916381110113" class="btn-ghost" target="_blank">
       Call Us Now
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1657,20 +2070,32 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">
-    <a href="#" class="logo">Nova<span>Spark</span></a>
-    <p style="font-size:12px; color:var(--muted); margin-top:8px;">© 2025 NovaSpark Digital. All rights reserved.</p>
+    <a href="#" class="logo">T<span>TC</span></a>
+    <p style="font-size:12px; color:var(--muted); margin-top:8px; ">© 2026 TTC. All rights reserved.</p>
   </div>
   <div class="footer-right">
     <div class="social-links">
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-      <a href="#">YouTube</a>
+      <a href="https://www.instagram.com/thinktank_crew/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@THINKTANKCREW" target="_blank">YouTube</a>
     </div>
-    <p style="margin-top:10px;">hello@novaspark.digital</p>
+    <p style="margin-top:10px; font: bold;" >thinktankcrew2025@gamil.com</p>
   </div>
 </footer>
 
+<script>
+  // ── Reveal animation on scroll ──
+  const revealElements = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  revealElements.forEach(el => observer.observe(el));
+</script>
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
